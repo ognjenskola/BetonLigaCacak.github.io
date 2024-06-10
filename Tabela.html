@@ -314,22 +314,62 @@
                 height: 1000px;
         }
         }
-        #uzglavlje
-        {
-            width:100%;
-            height:500px;
-            background-color:#03BF63;
-            bottom:0;
-            margin-top:100px;
-        }
-        .prava
-        {
-            position:relative;
-            width:20%;
-            top:50px;
-            left:40%;
-            color:#f1f1f1;
-        }
+        #uzglavlje {
+    background-color: #03BF63;
+    margin-top: 100px;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.link
+{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+.link:hover
+{
+    color: #0E1015;
+    text-decoration: none;
+}
+.prava {
+    margin-top: 20px;
+    font-size: 14px;
+}
         
     </style>
     
@@ -412,8 +452,32 @@
             </div>
         </div>
         <div id="uzglavlje">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>O nama</h3>
+                    <p>Saznajte više o nama</p>
+                    <a href="O nama.html" class="link">Saznajte više</a>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Kontakt</h3>
+                    <p>Kontaktirajte nas za bilo kakvu vrstu saradnje.</p>
+                    <ul>
+                        <li>Email: fsbetonlige@gmail.com</li>
+                        <li>Telefon: +381 61 6564014</li>
+                    </ul>
+                </div>
+                <div class="footer-section follow">
+                    <h3>Zapratite nas</h3>
+                    <p>Ostanite informisani o našim najnovijim vestima i događajima.</p>
+                    <ul>
+                        <li><a href="#" class="link">Instagram</a></li>
+                        <li><a href="#" class="link">TikTok</a></li>
+                        <li><a href="#" class="link">Uživo rezultati i tabela</a></li>
+                    </ul>
+                </div>
+            </div>
             <p class="prava">BETON LIGA ČAČAK © 2024</p>
-    </div>
+        </div>
     </form>
 </body>
 </html>
