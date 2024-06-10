@@ -86,7 +86,7 @@
             width:80%;
             margin-left:10%;
             background-color:#03BF63;
-            height:600px;
+            height:500px;
             margin-top:200px;
             border-radius:20px;
             color:#F9F9F9;
@@ -106,6 +106,7 @@
 
         #slikaonama
         {
+            border-radius: 10%;
             float:right;
             height:400px;
             position:relative;
@@ -115,7 +116,7 @@
         {
             width:50%;
             height:400px;
-            font-size:xx-large;
+            font-size:x-large;
             margin-top:5%;
         }
         .mreze
@@ -208,22 +209,62 @@ button .fas{
 .dot.active{
 background:#03BF63;
 }
-#uzglavlje
-        {
-            width:100%;
-            height:500px;
-            background-color:#03BF63;
-            bottom:0;
-            margin-top:100px;
-        }
-        .prava
-        {
-            position:relative;
-            width:20%;
-            top:50px;
-            left:40%;
-            color:#f1f1f1;
-        }
+#uzglavlje {
+    background-color: #03BF63;
+    margin-top: 100px;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.link
+{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+.link:hover
+{
+    color: #0E1015;
+    text-decoration: none;
+}
+.prava {
+    margin-top: 20px;
+    font-size: 14px;
+}
     </style>
     
 </head>
@@ -240,28 +281,28 @@ background:#03BF63;
             </div>
         </div>
         <div class="onama">
-            <h1 style="width:10%;margin-left:45%;">O NAMA</h1>
+            <h1 style="width:20%;margin-left:40%;">O NAMA</h1>
             <p id="tekst">
                 Beton Liga Čačak je projekat koji je nastao iz najobičnijeg fudbala sa društvom. 
                 Priča vuče korene još iz davnih vremena kada su se deca iz krajeva Vinara i Košutnjak delila u ekipe i predstavljali svoja naselja.
                 Fudbal između naselja u Čačku je polako počeo da se širi sve do 2023. kada je konačno formirana Beton Liga Čačak u formatu sa 10 ekipa.
                 Ovosezonsko izdanje lige broji 8 timova i predstavlja drugu sezonu Beton Lige na javnoj sceni.
             </p>
-            <img id="slikaonama" runat="server" src="betonligalogo.png" CssClass="auto-style1" />
+            <img id="slikaonama" runat="server" src="IMG_20240610_111953.jpeg" CssClass="auto-style1" />
         </div>
 
         <div class="slider">
       <div class="slide">
-            <img src="velikaslika1.png" alt="Photo1"/>
+            <img src="IMG_20240610_113220.jpeg" alt="Photo1"/>
         </div>
       <div class="slide">
-            <img src="slika2.jpg" alt="Photo3"/>
+            <img src="IMG_20240516_171041.jpeg" alt="Photo3"/>
         </div> 
       <div class="slide">
-            <img src="slika3.jpg" alt="Photo2"/>
+            <img src="IMG_20240526_033634.jpeg" alt="Photo2"/>
         </div>
       <div class="slide">
-            <img src="slika4.jpg" alt="Photo3"/>
+            <img src="velikaslika1.png" alt="Photo3"/>
         </div> 
 
         <a class="btn-slide prev"><img src="arrow.png" style="height:75px;"/></a>
@@ -274,21 +315,46 @@ background:#03BF63;
 </div>
     </div>
         <div class="kontakt">
+            <h1 style="width:20%; margin-left: 40%;">NAŠ TIM</h1>
             <div class="mreze">
-                <a href="https://www.youtube.com/@BetonLigaCacak" target="_blank"><img src="youtubeico.png" style="height:100px;" /></a>
-                <p>YOUTUBE - Beton Liga Čačak</p>
+                <img src="youtubeico.png" style="height:100px;" />
+                <p>Ognjen Pešić</p>
             </div>
             <div class="mreze">
-                <a href="https://www.tiktok.com/@betonligacacak?is_from_webapp=1&sender_device=pc" target="_blank"><img src="tiktokico.png" style="height:100px;" /></a>
-                <p>TikTok - @betonligacacak</p>
+                <img src="tiktokico.png" style="height:100px;" />
+                <p>Ivan Ilić</p>
             </div>                
             <div class="mreze">
                 <a href="https://www.instagram.com/betonligacacak/" target="_blank"><img src="instaramico.png" style="height:100px;" /></a>
-                <p>Instagram - @betonligacacak</p>
+                <p>Vukašin Stančić</p>
             </div>                
             
         </div>
         <div id="uzglavlje">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>O nama</h3>
+                    <p>Saznajte više o nama</p>
+                    <a href="O nama.html" class="link">Saznajte više</a>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Kontakt</h3>
+                    <p>Kontaktirajte nas za bilo kakvu vrstu saradnje.</p>
+                    <ul>
+                        <li>Email: fsbetonlige@gmail.com</li>
+                        <li>Telefon: +381 61 6564014</li>
+                    </ul>
+                </div>
+                <div class="footer-section follow">
+                    <h3>Zapratite nas</h3>
+                    <p>Ostanite informisani o našim najnovijim vestima i događajima.</p>
+                    <ul>
+                        <li><a href="#" class="link">Instagram</a></li>
+                        <li><a href="#" class="link">TikTok</a></li>
+                        <li><a href="#" class="link">Uživo rezultati i tabela</a></li>
+                    </ul>
+                </div>
+            </div>
             <p class="prava">BETON LIGA ČAČAK © 2024</p>
         </div>
         <script src="onama.js"></script>
